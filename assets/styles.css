@@ -37,6 +37,19 @@ body {
     font-size: 30px;
 }
 
+.hero button {
+    display: block;
+    background-color: blueviolet;
+    padding: 30px;
+    border-radius: 10px;
+    margin:10px;
+    width: 12em;
+    padding:1em;
+    font-weight: 600;
+    font-size: 25px;
+    
+}
+
 .skills {
     display: flex;
     flex-direction: column;
