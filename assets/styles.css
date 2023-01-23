@@ -1,6 +1,9 @@
 * {
     color: whitesmoke;
+    text-decoration: none;
 }
+
+
 
 body {
     display: flex;
@@ -101,6 +104,7 @@ body {
     align-items: center;
     justify-content: space-evenly;
     flex-grow: 2;
+    object-fit: fill;
     
 }
 
@@ -157,14 +161,44 @@ body {
 .contact-me {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    margin: 100px;
 }
 
 .contact-me h2 {
     font-size: 60px;
 }
+
+
+
+.contact-me ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;  
+    margin: 0;  
+    padding: 0;  
+    text-decoration: none;
+}
+
+
+.contact-me ul li {
+    margin: 10px;
+}
+
+#phone-number {
+    display: block;
+}
 /*#github img{
     width: 10;
     height: 10;
 } */
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer h5 {
+    font-size: 25px;
+}
