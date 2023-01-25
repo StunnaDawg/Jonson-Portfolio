@@ -39,13 +39,16 @@ body {
   margin-left: 80px;
   margin-bottom: 50px;
   font-size: 60px;
+  flex-shrink: 1;
+  flex-wrap: wrap;
 }
 
 .hero h1 {
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .hero p {
+    flex-grow: 1;
   font-size: 20px;
 }
 
@@ -58,6 +61,22 @@ body {
   padding: 0.5em;
   font-weight: 600;
   font-size: 20px;
+  flex-shrink: 1;
+}
+
+.avatar-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    flex-shrink: 2;
+    min-width: 100%;
+}
+
+#avatar {
+    width: 20%;
+    flex-shrink: 1;
 }
 
 .skills {
