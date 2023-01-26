@@ -6,6 +6,7 @@
 body {
     background-color: #171c28;
     font-family: Montserrat, "Montserrat", sans-serif;
+    height: 100vh;
 }
 
 .header {
@@ -32,13 +33,13 @@ body {
 }
 
 .hero {
-  padding: 0 60px;
+  padding: 60px 60px;
 }
 
 .hero-wrapper {
  display: grid;
  grid-template-columns: 1fr 1fr;
- grid-template-rows: 820px;
+ grid-template-rows: 600px;
 }
 
 .column-left {
@@ -50,12 +51,13 @@ body {
 
 .column-left h1 {
     font-size: 90px;
+    margin-bottom: 10px;
 }
 
 
 .column-left p {
     font-size: 20px;
-    line-height: 2.3;
+    line-height: 1.5;
 }
 
 .column-right {
@@ -79,15 +81,21 @@ body {
     padding: 0.5em;
     font-weight: 600;
     font-size: 20px;
-    flex-shrink: 1;
   }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 760px) {
     .hero {
         padding: 30px;
     }
     .hero-wrapper {
         grid-template-columns: 1fr; /* makes it 1 column */
+    }
+
+    .column-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
     }
     .column-left h1 {
         font-size: 80px;
@@ -99,7 +107,7 @@ body {
         grid-template-areas: 600px;
     }
     .column-left h1 {
-        font-size: 32px;
+        font-size: 45px;
     }
 }
 
@@ -129,6 +137,16 @@ body {
     font-size: 20px;
 }
 
+ .skills-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.skills-img {
+    max-width: 100%;
+    max-width: 100%;
+} 
 
 .fa-brands {
     padding: 0%;
@@ -137,7 +155,7 @@ body {
   margin-bottom: 10px;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 860px) {
     .skills {
         padding: 30px;
     }
@@ -149,7 +167,7 @@ body {
 
 @media screen and (max-width: 460px) {
     .skills-container h2 {
-        font-size: 60px;
+        font-size: 45px;
     }
 }
 
@@ -198,7 +216,12 @@ body {
     }
 }
 
-/*
+@media screen and (max-width: 460px) {
+    .projects h2 {
+        font-size: 45px;
+    }
+}
+
 .contact-me {
   display: flex;
   flex-direction: column;
@@ -242,18 +265,9 @@ body {
   font-size: 25px;
 }
 
-
-/*@media (max-width: 820px) {
-    .header .hero .skills .projects {
-        display: flex;
-        flex-basis: 50%;
+@media screen and (max-width: 460px) {
+    .contact-me h2 {
+        font-size: 40px;
     }
-    * p {
-        font-size: 10px;
-    }
-   * h1 { 
-    display: flex;
-    font-size: 30px;
-    align-items: center;
-   }
-} */
+}
+    
