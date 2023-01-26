@@ -154,10 +154,12 @@ body {
 }
 
 .projects {
+    padding: 60px 60px;
 }
 
 .projects h2 {
     font-size: 60px;
+    text-align: center;
 }
 
 .projects-container {
@@ -169,6 +171,7 @@ body {
 .projects-main {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
 }
 
 .flex-item {
@@ -183,9 +186,16 @@ body {
 #big-item {
     background-image: url('./images/600x600.png');
     min-width: 90%;
-    max-height: 450px;
+    min-height: 415px;
     margin: 4%;
-    grid-row: span 1;
+    grid-row: 1 / 3;
+}
+
+@media screen and (max-width: 1000px) {
+    .projects-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
 }
 
 /*
