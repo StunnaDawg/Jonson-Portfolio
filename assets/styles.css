@@ -383,6 +383,10 @@ a:hover {
 
 }
 
+#email-me li{
+    padding-left: 20px;
+}
+
 .footer {
   display: flex;
   justify-content: center;
