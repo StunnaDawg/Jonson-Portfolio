@@ -26,10 +26,12 @@ body {
 
 .header ul li {
   margin: 20px;
+  font-weight: bolder;
 }
 
 .header li a:hover{
     color: blueviolet;
+    cursor: pointer;
 }
 
 .header h3 {
@@ -92,7 +94,8 @@ body {
   .hero button:hover {
     background-color: white;
     border: solid blueviolet;
-    color: blueviolet
+    color: blueviolet;
+    cursor: pointer;
   }
 
 @media screen and (min-width: 1700px) {
@@ -205,6 +208,11 @@ body {
   margin-bottom: 10px;
 }
 
+.fa-brands:hover {
+    color: blueviolet;
+    cursor: pointer;
+}
+
 @media screen and (min-width: 1700px) {
     .skills-container h2 {
         font-size: 120px;
@@ -275,22 +283,39 @@ body {
     min-width: 40%;
     min-height: 200px;
     margin: 4%;
+    border-radius: 10px;
 }
 
 .flex-item h4 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 182px;
+    padding-top: 170px;
     padding-left: 10px;
     font-size: 25px;
+}
+
+.flex-item p {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.flex-item:hover {
+    background-color: blueviolet;
+    box-shadow: white 0px 48px 100px 0px;
+    cursor: pointer;
+}
+
+#big-item:hover {
+    background-color: blueviolet;
 }
 
 #big-item h4{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 375px;
+    padding-top: 365px;
     padding-left: 10px; 
     font-size: 40px;
 }
@@ -330,7 +355,7 @@ body {
 .contact-me {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
   margin-left: 80px;
   flex-wrap: wrap;
@@ -341,29 +366,27 @@ body {
 }
 
 .contact-me ul {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    list-style-type: none;
+    padding-bottom: 100px;
+    padding-left: 100px;
 }
 
 .contact-me ul li {
   margin: 10px;
 }
 
-#phone-number {
-  display: block;
+a:hover {
+    cursor: pointer;
+    color: blueviolet;
+
 }
-/*#github img{
-    width: 10;
-    height: 10;
-} */
 
 .footer {
   display: flex;
   justify-content: center;
+  border-top: solid blueviolet;
 }
 
 .footer h5 {
@@ -388,7 +411,7 @@ body {
     }
     .contact-me ul {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
 }
 
