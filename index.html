@@ -4,45 +4,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/reset.css">
     <link rel="stylesheet" href="./assets/styles.css">
     <title>Document</title>
+    <script src="https://kit.fontawesome.com/3909a2e849.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- header section -->
+
     <header class="header">
         <h3>Jonson Allen</h3>
         <nav class="header-links"></nav>
             <ul>
-                <li></li>
-                <li></li>
-                <li></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-form">Contact Me</a></li>
             </ul>
     </header>
-    <section class="hero">
-        <h1>Hi I'm Jonson</h1>
-        <img>
+
+<!-- hero (about me) section -->
+
+    <section class="hero" id="about-me">
+        <div class="hero-wrapper">
+            <div class="column-left">
+                <h1>Hi I'm Jonson</h1>
+                    <p>
+                    I am a Full-Stack Web Development student at UNB.<br>
+                    I have a passion for problem solving and design. <br>
+                    </p>
+                    <button type="button" href="#">Contact Me</button>
+            </div>
+
+            <div class="column-right">
+                <img src="./assets/images/5ca489578f388fd6152e4f8263149b47-sticker.png" alt="Jonson Avatar" class="avatar">
+            </div>
+        </div>
     </section>
-    <section class="about-me">
-        <h1>About Me</h1>
-        <p></p>
-        <ul class="skills">
-            <li>HTML 5</li>
-            <li>CSS 3</li>
-            <li>Javascript</li>
+
+ <!-- Skills section -->
+
+    <section class="skills" id="skills">
+        <div class="skills-container">
+            <h2>Skills</h2>
+            <ul class="fa-ul">
+                <i class="fa-brands fa-html5 fa-4x"></i>
+                <i class="fa-brands fa-css3-alt fa-4x"></i>
+                <i class="fa-brands fa-js fa-4x"></i>
+            </ul>
+            
+            <div class="skills-content">
+                <div class="skills-text">
+                    <p>
+                        I am proficient in HTML 5, CSS3, and Javascript. <br>
+                    </p>
+                </div>
+                <div class="skills-image">
+                    <img src="./assets/images/memojilaptop.png" alt="Jonson Avatar" class="skills-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- projects section -->
+
+    <section class="projects" id="projects">
+        <div class="project-container">
+            <h2>Projects</h2>
+                <div class="projects-main">
+                    <div class="projects-right">
+                       <a href="https://github.com/StunnaDawg">
+                        <div class="flex-item" id="big-item">
+                            <h4>Rock, Paper, Scissors</h4>
+                            <p>Coming soon!</p>
+                        </div>
+                        </a> 
+                    </div>
+
+                    <div class="projects-left">
+                        <a href="https://github.com/StunnaDawg">
+                         <div class="flex-item"> 
+                            <h4>Bookeeping App</h4>
+                            <p>Coming soon!</p>
+                        </div>
+                        </a>
+                        <a href="https://github.com/StunnaDawg">
+                        <div class="flex-item"> 
+                            <h4>Discord Bot</h4>
+                            <p>Coming soon!</p>
+                        </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </section>
+
+    <!-- Contact me Section -->
+
+    <section class="contact-me" id="contact-form">
+        <h2>Contact Me!</h2>
+        <ul class="contact-me-list">
+            <li><a href="https://github.com/StunnaDawg"> Github</a></li>
+            <li><a href="https://twitter.com/stunnacoding">Twitter</a></li>
+            <li id="email-me"><a href="mailto: jonsonal@hotmail.com">Email</a></li>
         </ul>
     </section>
-    <section class="projects">
-        <img>
-        <img>
-        <img>
-        <a class="github" href="https://github.com/StunnaDawg">Github Icon</a>
-    </section>
-    <section class="contact-me">
-        <ul>
-            <li><a href="mailto: jonsonal@hotmail.com">jonsonal@hotmail.com</a></li>
-        </ul>
-    </section>
-    <footer>
+    <footer class="footer">
         <h5>Made with ❤️</h5>
     </footer>
 </body>
