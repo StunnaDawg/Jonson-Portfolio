@@ -1,4 +1,4 @@
-# Portfolio Challenge Assignment
+# Jonson's Portfolio
 
 ## Description
 This is a Portfolio website that shows off my work to potential employers. The website was built using HTML5 and CSS3 languages. The webpage includes a section About Me, Skills, Projects, and Contact Me section.
